@@ -1,8 +1,16 @@
+import { setupInterceptors } from "./config";
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 
+import 'primevue/resources/themes/fluent-light/theme.css';
+import 'primevue/resources/primevue.css';
+import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.css';
+import '@/assets/sass/app.scss';
+
 
 //Event emitter
+import mitt from 'mitt';
 
 import App from "./App.vue";
 import router from "./router";
